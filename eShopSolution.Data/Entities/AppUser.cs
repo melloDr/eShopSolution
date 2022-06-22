@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Microsoft.AspNetCore.Identity;
 
 namespace eShopSolution.Data.Entities
 {
-    public class AppUser
+    public class AppUser : IdentityUser<Guid>
     {
         public string FirstName { get; set; }
 

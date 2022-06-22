@@ -8,12 +8,13 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace eShopSolution.Data.Configurations
 {
-    partial class CategoryConfiguration : IEntityTypeConfiguration<ProductInCategory>
+    partial class CategoryConfiguration : IEntityTypeConfiguration<Category>
     {
-        public void Configure(EntityTypeBuilder<ProductInCategory> builder)
+        public void Configure(EntityTypeBuilder<Category> builder)
         {
             builder.ToTable("Categories");
             builder.HasKey(x => x.Id);
+            builder.Property(x => x.Id).UseIdentityColumn();
             builder.Property(x => x.Status).HasDefaultValue(Status.Active);
         }
     }
