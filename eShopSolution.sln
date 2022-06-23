@@ -10,9 +10,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShopSolution.Application", "eShopSolution.Application\eShopSolution.Application.csproj", "{8A6C4BA1-8BD5-49C8-8816-88D36939C5A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eShopSolution.Application", "eShopSolution.Application\eShopSolution.Application.csproj", "{8A6C4BA1-8BD5-49C8-8816-88D36939C5A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShopSolution.Data", "eShopSolution.Data\eShopSolution.Data.csproj", "{C204F4B3-70CA-462B-82AE-BC5ECDB26736}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eShopSolution.Data", "eShopSolution.Data\eShopSolution.Data.csproj", "{C204F4B3-70CA-462B-82AE-BC5ECDB26736}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Trash", "Trash", "{E4BA32C9-42A2-40DD-98B8-60C1BE12A123}"
+	ProjectSection(SolutionItems) = preProject
+		eShopSolution.Data\Migrations\20220622072454_Initial.cs = eShopSolution.Data\Migrations\20220622072454_Initial.cs
+		eShopSolution.Data\Migrations\20220622072454_Initial.Designer.cs = eShopSolution.Data\Migrations\20220622072454_Initial.Designer.cs
+		eShopSolution.Data\Migrations\EShopDbContextModelSnapshot.cs = eShopSolution.Data\Migrations\EShopDbContextModelSnapshot.cs
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
