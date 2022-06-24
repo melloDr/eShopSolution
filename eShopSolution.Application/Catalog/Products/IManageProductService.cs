@@ -7,13 +7,13 @@ using eShopSolution.Application.Catalog.Products.Dtos;
 
 namespace eShopSolution.Application.Catalog.Products
 {
-    public interface IManageProductService
+    public interface IManageProductService 
     {
-        Task<int> Create(ProductCreateRequest request); // Thằng task giúp nó chạy được nhiều luồng 1 lúc, thông qua thread 
+        Task<int> Create(ProductCreateRequest request); // Thằng task giúp nó chạy theo tuần tự, không chen lấn 
 
-        Task<int> Update(ProductEditRequest request);
+        Task<int> Update(ProductUpdateRequest request);
         Task<int> Delete(int productId);
         Task<List<ProductViewModel>> GetAll();
-        Task<PagedViewModel<ProductViewModel>> GetAllPaging(string keyword, int pageIndex, int pageSize);
+        Task<PagedResult<ProductViewModel>> GetAllPaging(GetProductPagingRequest request);
     }
 }

@@ -8,6 +8,6 @@ namespace eShopSolution.Application.Catalog.Products
 {
     public interface IPublicProductService
     {
-        PagedViewModel<ProductViewModel> GetAllByCategoryId(int CategoryId, int PageIndex, int PageSize);
+        PagedResult<ProductViewModel> GetAllByCategoryId(int CategoryId, int PageIndex, int PageSize);
     }
 }
